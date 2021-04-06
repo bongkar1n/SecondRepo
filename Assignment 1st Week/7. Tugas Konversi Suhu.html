@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS Semua Tugas.css">
+    <title>Ini Tugas Rudi</title>
+</head>
+<body>
+    
+    <h1 class="Headline">Halo Semua</h1>
+    <h2 class="Headline">Semoga harimu indah</h2>
+    <div class="container">
+        <div class="content">
+                       
+            <div class="card">
+                <h3 class="HeadCard">Tugas Konversi Suhu</h3> 
+
+                <form>
+                    <input type="text" id="nilaiSuhu" placeholder="Angka Suhu">
+                    <select id="jenis" name="jenis">
+                        <option value="celcius">Celcius</option>
+                        <option value="kelvin">Kelvin</option>
+                        <option value="fahrenheit">Fahrenheit</option>
+                    </select>
+                    <br>
+                    <label for="jenisKonversi">dikonversi menjadi</label>
+                    <select id="jenisKonversi" name="jenisKonversi">
+                        <option value="Celcius">Celcius</option>
+                        <option value="Kelvin">Kelvin</option>
+                        <option value="Fahrenheit">Fahrenheit</option>
+                    </select>
+                    <br>
+
+                    <button type="button" onclick="konversiSuhu()" id="button">Apply</button>
+
+                </form>
+
+                <p id="hasil"></p>
+                            
+           
+
+         </div>
+        </div>
+    </div>
+
+    <script src="7. Tugas Konversi Suhu.js"></script>
+</body>
+</html>

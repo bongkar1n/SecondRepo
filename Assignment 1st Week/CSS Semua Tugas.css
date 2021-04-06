@@ -1,0 +1,30 @@
+.Headline {
+  outline-color: rgb(19, 44, 44);
+  height: auto;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  text-align: center;
+}
+
+.container {
+  min-height: 60vh;
+  padding-bottom: 30px;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.content {
+  padding: 20px 30px;
+  background-color: white;
+  min-height: inherit;
+  display: grid;
+}
+
+.card {
+  height: 100%;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  padding: 10px;
+}
+
+.HeadCard {
+  text-align: center;
+}
