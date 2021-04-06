@@ -1,0 +1,23 @@
+.headline {
+  outline-color: rgb(24, 85, 85);
+  height: auto;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  text-align: center;
+}
+
+.container {
+  min-height: 60vh;
+  text-align: center;
+}
+
+#input {
+  border-bottom-left-radius: 10px;
+}
+#input2 {
+  border-bottom-left-radius: 10px;
+}
+
+#button {
+  background-origin: padding-box;
+  margin-top: 10px;
+}
