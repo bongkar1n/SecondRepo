@@ -1,82 +1,57 @@
 
-// function printPattern(){
-//     let input = document.getElementById("input").value;
-//     let start = 1;
-//     let temp = [];
-//     while(start <= input){
-//         temp.push('*');
-//         start++;
-//     }
-//     document.getElementById("result").textContent = temp;
-// }
-
-// function pattern(){
-//     let input = document.getElementById("input").value;
-        
-//     for(let var1 = 1; var1 <= input; var1++){
-//        for(let var2 = 1; var2 <= var1; var2++){
-//             document.getElementById("result").innerHTML = "*";
-//             if( var2 === var1){
-//                 continue;
-//             } else {
-//                 document.getElementById("result").innerHTML = " ";
-//             }
-//         }
-//         document.getElementById("result").innerHTML = "<br />";
-//     }
-
-    
-// }
-
 function pattern(){
     let input = document.getElementById("input").value;
-    
+    let patternresult = [];
         
     for(let num1 = 1; num1 <= input; num1++){
        for(let num2 = 1; num2 <= num1; num2++){
-            document.write("*" + " ");
-            
+            patternresult.push("*");
         }
-        document.write("<br />");
+        patternresult.push("<br>");;
     }
+patternresult = patternresult.join("");
 
+document.getElementById("result").innerHTML = `${patternresult}`;
 }
 
 
-// function trianglePattern(){
-//     let input = document.getElementById("input").value;
-    
-        
-//     for(let var1 = 1; var1 <= input; var1++){
-
-//         for(let var3 = 1; var3 <=(input - var1); var3++){
-//             document.write("&nbsp");
-//         }
-//        for(let var2 = 1; var2 <= var1; var2++){
-//             document.write("*");
-//             if( var2 === var1){
-//                 continue;
-//             } else {
-//                 document.write(" ");
+// const printPattern = num => {
+//     let pattern = "";
+//     let asterixPattern = document.getElementById('result');
+//     if (num == 0) return alert('angka tidak boleh 0');
+//     else {
+//         for (let x = 1; x <= num; x++) {
+//             for (let y = 1; y <= x; y++){
+//                 pattern += "*" + " ";
 //             }
+//             pattern += "<br>";
 //         }
-//         document.write("<br />");
+//         return asterixPattern.innerHTML = pattern;
 //     }
+    
+// };
 
-// }
+// const inputNumber = document.getElementById("input");
+// const outputButton = document.getElementById('button');
+// outputButton.addEventListener('click', () => {
+//     printPattern(inputNumber.value);
+// });
 
-// var x, y;
 
-// for (x = 1; x <= 5; x++) {
-//   console.log(`perulangan ${x}`);
-//   for (y = 1; y <= x; y++) {
-//     document.write(y);
-//     console.log(`yang diprint oleh perulangan ${x} adalah ${y}`);
-//     if (y === x) {
-//       continue;
-//     } else {
-//       document.write(" ");
+
+// function astericPattern(){
+//     let counter,col,row = document.getElementById("input").value;
+//     let pattern =[];
+//     let object = "*";
+//     console.log(row);
+//     for(counter=1;counter<=row;counter++){
+//         for(col=1; col<=counter; col++){
+//             pattern.push(object);
+//         }
+//             pattern.push("<br>");
 //     }
-//   }
-//   document.write("<br />");
+//     pattern = pattern.join("");
+
+//     document.getElementById("result").innerHTML = `<hr>Result<br><br>${pattern}`
+//     document.getElementById("result").innerHTML = `<div class='alert'><strong>Result</strong><br>${pattern}</div>`
 // }

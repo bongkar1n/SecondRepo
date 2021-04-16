@@ -1,0 +1,46 @@
+.container {
+  width: 80%;
+  margin: 50px auto;
+  padding: 25px;
+  background-color: grey;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+}
+/* 
+.contents {
+  width: 500px;
+  margin: 5px auto;
+  padding: 5px 5px;
+  background-color: blanchedalmond;
+  border-radius: 5px;
+  box-shadow: 5px 1px 8px #e0e0e0;
+  font-size: 20px;
+} */
+
+label {
+  font-weight: bold;
+  color: #181818;
+}
+
+.input {
+  width: 50%;
+  font-size: 15px;
+  margin: 5px auto;
+  align-content: center;
+}
+
+button {
+  font-weight: bold;
+  margin-top: 8px;
+}
+
+#output {
+  padding: 5px 30px;
+  font-weight: bold;
+  white-space: pre;
+}
+
+#subjudul {
+  align-content: center;
+}

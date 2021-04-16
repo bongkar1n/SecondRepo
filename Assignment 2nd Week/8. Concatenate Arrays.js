@@ -28,13 +28,14 @@
 
 function eraseArray(){
     let input = document.getElementById("input").value;
-    let newInput= input.split("");
     let input2 = document.getElementById("input2").value;
-    let newInput2= input2.split("");
-    let array = [...newInput, ...newInput2];
+    let array = [...input, ...input2];
+    console.log(array);
     let mySet = new Set(array);
+    console.log(mySet);
     let newArray = [...mySet];
-    document.getElementById("result").textContent = newArray.sort();
+    
+    document.getElementById("result").textContent = newArray;
 }
 
 

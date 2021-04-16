@@ -2,19 +2,22 @@
 function checkPrimeNumber(){
     let input1 = Number(document.getElementById("input1").value);
     let input2 = Number(document.getElementById("input2").value);
+    let result = [];
   
     while ( input1 != 1 && input1 <= input2 ){
-        let h = 0;
+        let flag = 0;
         for(let i = 2; i < input1; i++){
             if (input1 % i == 0){
-                h = 1;
+                flag = 1;
                 break;
             }
         }
-        if (h == 0)
-        document.write(input1 + " ");
+        if (flag == 0)
+        result.push(input1);
         input1++;
+       
     }
+    document.getElementById("result").innerHTML = result.join(", ");
 }
 
 // function checkPrimeNumber2(){
